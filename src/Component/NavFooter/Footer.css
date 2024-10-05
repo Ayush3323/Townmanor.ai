@@ -1,0 +1,129 @@
+
+footer {
+    background-image: url('/footer-bg.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px 0 0 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: #fff; /* Ensure text is white */
+  }
+  
+  footer p, footer ul li {
+    font-size: 14px;
+    line-height: 27px;
+    color: #fff;
+}
+  
+  footer ul li a {
+    color: #438bc7;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .fab {
+    font-size: 13px;
+  }
+  
+  .footer-container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .last-container {
+    background: #222;
+    padding: 1rem 0;
+    color: #fff; /* Ensure text is white */
+  }
+  
+  .footer-content {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff; /* Ensure text is white */
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+
+  .container {
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  
+  .footer-social a {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #e0e1e6;
+    color: #000000;
+    display: inline-block;
+    line-height: 29px;
+    border-radius: 50px;
+    margin: 0px 0px 0px 10px;
+    background: #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    background-color: #e00f0f; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  .footer-social a:hover .fab {
+    color: #f8f8f8; /* Change icon color on hover */
+  }
+  
+  .footer_india_content a,
+.footer_international_content a {
+    display: inline-block;
+    color: #b8b4b4; /* Set link color */
+    text-decoration: none;
+    margin-right: 10px; /* Add space between links */
+    margin-bottom: 5px; /* Add space below links */
+    font-size: 14px; /* Set font size */
+}
+
+.footer_india_content a:hover,
+.footer_international_content a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #f30202; /* Change color on hover */
+}
+
+.footer_india_content,
+.footer_international_content {
+    padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+      flex: 0 0 auto;
+      width: 25%;
+      margin: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-2 {
+      flex: 0 0 auto;
+      width: 16.66666667%;
+      margin: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-5 {
+      flex: 0 0 auto;
+      width: 41.66666667%;
+      margin: 5px;
+  }
+}
