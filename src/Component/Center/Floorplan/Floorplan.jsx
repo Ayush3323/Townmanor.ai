@@ -19,7 +19,7 @@ function Floorplan() {
               <img src="fpn.jpeg" alt="Thumbnail 2" />
               <img src="maap.png" alt="Thumbnail 3" />
               <img src="fpn.jpeg" alt="Thumbnail 4" />
-              {/* <img src="fpn.jpeg" alt="Thumbnail 5" /> */}
+              <img src="fpn.jpeg" alt="Thumbnail 5" />
               {/* Add more images to test scrolling */}
             </div>
           </div>

@@ -2,41 +2,68 @@
   margin-top: 70px;
 }
 
-.outer-containers {
-  width: 50%;
+.subitem-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upper {
+  margin-bottom: -10px;
+  max-width: 700px;
+  background-color: #f8e1e1;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.upper::-webkit-scrollbar {
+  display: none;
+}
+
+.lower {
+  max-width: 800px;
   background-color: #fff;
   border-radius: 12px;
   padding: 10px;
-  padding-top: 20px; 
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: auto;
+  padding-top: 20px;
+  box-shadow: 0 4px 15px rgba(116, 44, 44, 0.2);
+  transition: box-shadow 0.3s ease;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.upper-box {
+.lower::-webkit-scrollbar {
+  display: none;
+}
+
+.upper-div {
+  min-width: 600px;
+}
+
+.lower-div {
+  min-width: 750px;
+}
+
+.upper-div,
+.lower-div {
   display: flex;
   align-items: center;
-  background-color: #f1eaea;
-  border-radius: 20px;
-  position: absolute;
-  padding: 5px;
-  top: -52px;
-  left: 20px;
-  right: 20px;
-  z-index: 1;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.lower-box {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .subdetail-item {
   flex: 1;
-  text-align: center;
   padding: 5px;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subdetail-item span {
@@ -46,8 +73,6 @@
 }
 
 .subdetail-item strong {
-  display: flex;
-  justify-content: center;
   font-size: 13px;
   font-weight: bold;
   color: #363636;
@@ -57,112 +82,56 @@
   font-size: 14px;
 }
 
-/* Media Queries */
-
 @media only screen and (max-width: 480px) {
-  .outer-containers {
-    width: 90% !important;
+  .subitem-div {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    padding: 0px 5px;
   }
 
-  .upper-box {
-    flex-direction: row;
-    align-items: center;
+  .upper {
+    margin: 0px 4%;
+    margin-bottom: -6px;
+    padding: 3px;
   }
 
-  .upper-box{
-    display: none;
+  .lower {
+    padding: 8px;
   }
 
-  .subdetails{
-    margin: 20px !important;
+  .upper-div {
+    min-width: 400px;
   }
-  
-  .subdetail-item{
-    padding: 0px 1px;
+
+  .lower-div {
+    min-width: 600px;
+  }
+
+  .subdetail-item span {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 4px;
   }
 
   .subdetail-item strong {
-    display: flex;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: bold;
-    color: #363636;
-  }
-  .subdetail-item span {
-    display: block;
-    color: #666;
-    font-size: 11px;
-    font-weight: 300;
-    line-height: 10px;
+    font-size: 10px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .outer-containers {
-    width: 90% !important;
-  }
-
-  .upper-box {
-    flex-direction: row;
-    align-items: center;
-    top: -33px;
-  }
-
-  .subdetails{
-    margin-top: 70px;
-  }
-  
-  .subdetail-item{
-    padding: 0px 1px;
-  }
-
-  .subdetail-item strong {
+@media only screen and (max-width: 780px) {
+  .subitem-div {
     display: flex;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: bold;
-    color: #363636;
+    flex-direction: column;
+    align-items: normal;
   }
+
+  .upper {
+    margin: 0px 4%;
+    margin-bottom: -6px;
+  }
+
   .subdetail-item span {
-    display: block;
-    color: #666;
-    font-size: 11px;
-    font-weight: 300;
-    line-height: 10px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .outer-containers {
-    width: 90% !important;
-  }
-
-  .upper-box {
-    flex-direction: row;
-    align-items: center;
-    top: -33px;
-  }
-
-  .subdetails{
-    margin-top: 70px;
-  }
-  
-  .subdetail-item{
-    padding: 0px 1px;
-  }
-
-  .subdetail-item strong {
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #363636;
-  }
-  .subdetail-item span {
-    display: block;
-    color: #666;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 10px;
+    line-height: 8px;
   }
 }

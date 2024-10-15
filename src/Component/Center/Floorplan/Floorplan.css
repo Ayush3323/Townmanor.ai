@@ -36,7 +36,7 @@
   .thumbnail-section {
     overflow-x: auto; /* Enable horizontal scrolling */
     padding-bottom: 10px;
-    width: 100%; /* Ensure it uses full width */
+    width: 90%;
   }
   
   .thumbnails {
